@@ -13,9 +13,10 @@
   "keywords": [
     "SIF",
     "cytoscape",
-    "js"
+    "js",
+    "biojs"
   ],
-  "author": "jmvillaveces",
+  "author": "jmVillaveces",
   "license": "Apache 2.0",
   "bugs": {
     "url": "https://github.com/jmvillaveces/sif.js/issues"
