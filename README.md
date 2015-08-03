@@ -1,6 +1,14 @@
 # sif.js
 A javascript library to parse simple interaction file (SIF) files. You can find more information about SIF files [here] (http://wiki.cytoscape.org/Cytoscape_User_Manual/Network_Formats).
 
+##Example
+```
+//Require SIF.js 
+var SIFJS = require('../');
+
+var interactions = SIFJS.parse('node1 xx node2\nnode1 xx node2\nnode1 yy node2');
+```
+
 ##SIF Format
 The simple interaction format is convenient for building a graph from a list of interactions. It also makes it easy to combine different interaction sets into a larger network, or add new interactions to an existing data set.  Lines in the SIF file specify a source node, a relationship type (or edge type), and one or more target nodes:
 
