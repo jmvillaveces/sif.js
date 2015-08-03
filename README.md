@@ -4,7 +4,7 @@ A javascript library to parse simple interaction file (SIF) files. You can find 
 ##Example
 ```
 //Require SIF.js 
-var SIFJS = require('../');
+var SIFJS = require('sif.js');
 
 var interactions = SIFJS.parse('node1 xx node2\nnode1 xx node2\nnode1 yy node2');
 ```
