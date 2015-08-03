@@ -1,6 +1,6 @@
 {
   "name": "sif.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A javascript library to parse simple interaction file (SIF) files.",
   "main": "index.js",
   "scripts": {
