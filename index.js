@@ -19,9 +19,9 @@ var _parse = function(line, i){
         var target = _getNode(line[j]);
             
         if(source < target){
-            links[source.id + target.id + intType] = {target: target, source: source, intType: intType};
+            links[source.id + target.id + intType] = {target: target.id, source: source.id, intType: intType};
         }else{
-            links[target.id + source.id + intType] = {target: target, source: source, intType: intType};
+            links[target.id + source.id + intType] = {target: target.id, source: source.id, intType: intType};
         }
     }        
 }
