@@ -47,11 +47,10 @@ SIFJS.parseCyjson = function(text){
     
     var lines = text.split('\n'), i, length;
     for (i = 0, length = lines.length; i < length; i++) _parse(lines[i], i, links, nodes);
-	let cy_nodes = [];
-	let cy_edges = [];
-	for (let key in nodes) cy_nodes.push(
-                {'data': {'name':nodes[key]['id'], 'id':nodes[key]['id']}});
-            for (let key in links) cy_edges.push({'data': links[key]});
+    let cy_nodes = [];
+    let cy_edges = [];
+    for (let key in nodes) cy_nodes.push({'data': {'name':nodes[key]['id'], 'id':nodes[key]['id']}});
+    for (let key in links) cy_edges.push({'data': links[key]});
     
     return {'nodes': cy_nodes, 'edges':cy_edges};
 };
