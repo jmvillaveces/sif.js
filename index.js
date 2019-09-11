@@ -34,7 +34,7 @@ var _toArr = function(obj){
 function SIFJS() {};
     
 SIFJS.parse = function(text){
-	var nodes = {}, links = {};
+    var nodes = {}, links = {};
     
     var lines = text.split('\n'), i, length;
     for (i = 0, length = lines.length; i < length; i++) _parse(lines[i], i, links, nodes);
